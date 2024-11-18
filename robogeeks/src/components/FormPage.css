@@ -1,0 +1,35 @@
+.form-page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 35vh;
+  background: rgb(169, 143, 254);
+  padding: 25px;
+  z-index: 2;
+  color: white;
+}
+.slogan {
+  font-size: 2rem;
+}
+.steps {
+  padding: 15px;
+  font-size: 1.5rem;
+}
+.step{
+  font-size: 1rem;
+  padding-left: 15px;
+}
+.step:nth-child(1){
+  padding-top: 5px;
+}
+.load-form{
+  font-size: 1.2rem;
+  width:150px;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+  background: rgb(114, 36, 182);
+}
+.load-form:hover {
+  background-color: blueviolet;
+}

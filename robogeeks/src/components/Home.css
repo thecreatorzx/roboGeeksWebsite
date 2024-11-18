@@ -1,0 +1,38 @@
+.homePage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 65vh;
+  margin: 50px 0 0 0;
+  overflow: hidden;
+  z-index: 2;
+}
+.carousel {
+  position: relative;
+  width: 80%;
+  box-shadow: 5px 5px 15px 0 #3333;
+  background: white;
+}
+.buttonback,.buttonnext{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 25vh;
+  left: 4vw;
+  border: none;
+  font-size: 2rem;
+  background: none;
+  font-weight: 100;
+  z-index: 1;
+  background: rgba(248, 248, 248, 0.4);
+  border-radius: 30%;
+}
+.buttonnext{
+  top: 25vh;
+  left: 72vw;
+}
+.buttonback:hover, .buttonnext:hover {
+  cursor: pointer;
+  background: #3331;
+}
