@@ -17,7 +17,12 @@
       <button><i class="fa-solid fa-magnifying-glass"></i></button>
     </span>
     <span class="nav-profile">
+    <button>
+      <i class="fa-regular fa-heart"></i>
+    </button>
+      <button>
       <i class="fa-regular fa-user"></i>
+    </button>
     </span>
   </header>
   <main>
@@ -27,22 +32,49 @@
         <button>PRINT NOW</button>
       </span>
       <span class="right">
-        <img src="https://picsum.photos/250/300" alt="">
+        <img src="./assets/printer2.png" alt="">
       </span>
     </section>
     <section class="print3d-form-section">
       <h2>BRING YOUR IDEAS TO LIFE</h2>
-      <P>Fill the details and upload files and we will contact you for further details.</P>
+      <P>"Fill the details and upload files and we will contact you for further details"</P>
       <form action="submit()">
-        <label for="name">Enter Full Name : </label>
-        <input type="text" id="name">
-        <label for="email">Enter Email : </label>
-        <input type="textarea" id="email">
-        <label for="contact">Contact No. : </label>
-        <input type="text" id="contact">
+        <label for="name">Full Name : </label>
+        <input type="text" id="name" placeholder="My Name">
+        <label for="email">Email : </label>
+        <input type="textarea" id="email" placeholder="@email.com">
+        <label for="contact">Contact No : </label>
+        <input type="text" id="contact" placeholder="+91 ">
+        <button class="form-submit">Upload</button>
       </form>
     </section>
-    <section class="carousel"></section>
+
+
+    <section class="carousel-section">
+      <div class="carousel">
+        <img src="./assets/img1.png" alt="Image 1" class="carousel-item active">
+        <img src="./assets/img2.png" alt="Image 2" class="carousel-item">
+        <img src="./assets/img3.jpg" alt="Image 3" class="carousel-item">
+        <img src="./assets/img4.jpg" alt="Image 4" class="carousel-item">
+        <img src="./assets/img5.jpg" alt="Image 5" class="carousel-item">
+        <img src="./assets/img6.jpg" alt="Image 6" class="carousel-item">
+        <img src="./assets/img7.jpeg" alt="Image 7" class="carousel-item">
+    </div>
+    <button class="carousel-button left" id="prevBtn">&#8249;</button>
+    <button class="carousel-button right" id="nextBtn">&#8250;</button>
+    <div class="carousel-indicators">
+        <span class="indicator active" data-index="0"></span>
+        <span class="indicator" data-index="1"></span>
+        <span class="indicator" data-index="2"></span>
+        <span class="indicator" data-index="3"></span>
+        <span class="indicator" data-index="4"></span>
+        <span class="indicator" data-index="5"></span>
+        <span class="indicator" data-index="6"></span>
+    </div>
+    </section>
+
+
+
   </main>
   <footer>
     <span class="help">

@@ -1,6 +1,7 @@
 :root {
   --bg-color: #3333;
   --main-color: #ffe26e;
+  --text-color: #222;
   --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 *, *::after,*::before {
@@ -9,8 +10,9 @@
   box-sizing: border-box;
 }
 body {
-  background: var(--bg-color);
   overflow: hidden auto;
+  color: var(--text-color);
+  font-family: var(--font-family);
 }
 button,input {
   border: none;
@@ -29,14 +31,14 @@ header {
   align-items: center;
   width: 100vw;
   height: 10vh;
-  padding: 0 3vw;
+  padding: 0 20px;
   background-color: white;
 }
 .nav-brand {
   font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
-  font-family: var(--font-family);
+  color: black;
 }
 .nav-brand i {
   font-size: 1.3rem;
@@ -66,19 +68,33 @@ header {
   width: 60px;
   font-size: medium;
 }
-.nav-profile {
+.nav-profile{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width:120px;
+}
+.nav-profile>* {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 40px;
   height: 40px;
   font-size: 1.3rem;
-  color: #333;
-  border-radius: 50px;
-  border: 2px dashed #3333;
+  border-radius: 10px;
+  border: 3px solid var(--main-color);
   cursor:not-allowed;
 }
-
+.nav-profile>*:hover{
+  cursor: pointer;
+  background-color: var(--main-color);
+}
+@media only screen and (max-width: 600px) {
+  .nav-profile {
+    display: none;
+  }
+}
 
 /* footer */
 footer {
@@ -110,7 +126,6 @@ footer {
 .socials {
   display: flex;
   justify-content: space-evenly;
-  color:#333;
   width: 100%;
   height: 15%;
 }
